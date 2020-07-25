@@ -5,7 +5,9 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -y && apt-get install -y \
     software-properties-common \
     apt-transport-https \
-    curl
+    curl \
+    # Only needed to build indy-sdk
+    build-essential 
 
 # libindy
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88

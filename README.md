@@ -1,5 +1,7 @@
 # Docker image with libindy and NodeJS
 
+Base docker image with libindy, NodeJS, NPM and Yarn preinstalled. Also includes build tools needed to build indy-sdk for NodeJS.
+
 https://hub.docker.com/r/animosolutions/indy-nodejs
 
 ## Usage
